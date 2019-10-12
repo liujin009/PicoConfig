@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">"小站配置"</string>
+    <string name="str_userdisconnected">"连接异常，请检查ip"</string>
+    <string name="str_usernotAuthenticated">"请验证账户密码"</string>
+    <string name="str_alreadymodified">"已修改"</string>
+    <string name="str_confirmquery">"确认查询?"</string>
+    <string name="str_confirmmodified">"确认修改?"</string>
+
+    <string name="str_confirm">"确定"</string>
+    <string name="str_cancel">"取消"</string>
+    <string name="str_plscheckstr">"内容为空或不合理，请检查"</string>
+    <string name="str_cmdnotCmdExcuted">"执行中,稍后"</string>
+    <string name="str_picoconfig">"小站配置"</string>
+    <string name="str_sweepfre">"扫频功能"</string>
+    <string name="str_centerfre">"中心频率(100KHZ)"</string>
+    <string name="str_band">"带宽(M)(修改只允许输入5，10，20)"</string>
+    <string name="str_totalpower">"发射总功率(W)(0~20之间)"</string>
+
+    <string name="str_query">"查询"</string>
+    <string name="str_modified">"修改"</string>
+    <string name="str_sweepappmiss">"未安装扫频APK"</string>
+    <!--ipconfig-->
+    <string name="str_currentip">"当前IP地址"</string>
+    <string name="str_currentmask">"当前子网掩码"</string>
+    <!--routeconfig-->
+    <string name="str_routeid">"路由标识"</string>
+    <string name="str_destiipaddr">"目的IP地址"</string>
+    <string name="str_destimask">"目的子网掩码"</string>
+    <string name="str_nexthopip">"下一跳IP地址"</string>
+    <!--frequpowerconfig-->
+    <string name="str_localid">"本地小区标识"</string>
+    <string name="str_dlearfcn">"下行频点"</string>
+    <string name="str_dlbandwidth">"下行带宽"</string>
+    <string name="str_pa">"PDSCH采用均匀功率分配时的PA值(分贝)"</string>
+    <string name="str_e_rs">"参考信号功率(0.1毫瓦分贝)"</string>
+
+
+    <string name="str_routeconfig">"路由配置"</string>
+    <string name="str_ipconfig">"IP配置"</string>
+    <string name="str_frequpowerconfig">"频率功率配置"</string>
+
+
+    <string name="str_hostname">"IP地址"</string>
+    <string name="str_port">"端口"</string>
+    <string name="str_username">"用户名"</string>
+    <string name="str_pwd">"密码"</string>
+
+    <string name="str_connection">"连接"</string>
+    <string name="str_back">"返回"</string>
+
+
+</resources>

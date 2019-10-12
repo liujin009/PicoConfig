@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+
+    signingConfigs {
+        platform {
+            //platform.jks for localfile
+//            storeFile file('C:/Users/lwx453051/AppData/Local/Android/sdk/huawei-certificate/platform.jks')
+            storeFile file(project.sdkDir + "/huawei-certificate/platform.jks")
+            storePassword "123456"
+            keyAlias "platform"
+            keyPassword "123456"
+        }
+    }
+    defaultConfig {
+        applicationId "lte.tdtech.picoconfig"
+        minSdkVersion 9
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+        disable "ResourceType"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.platform
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
+    compile files('libs/commons-io-1.4.jar')
+    compile files('libs/trilead-ssh2-build213.jar')
+    compile files('libs/eventbus-3.0.0.jar')
+}

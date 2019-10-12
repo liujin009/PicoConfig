@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="lte.tdtech.picoconfig"
+          android:sharedUserId="android.uid.system" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:name=".PicApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.UserLoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.FrequPowerConfigActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.RouteConfigActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.IpConfigActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ListConfigActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
